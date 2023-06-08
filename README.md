@@ -1,5 +1,6 @@
-# huxley.cloud (The CloudHuxleyVerse)
-
+# huxley.cloud - The CloudHuxleyVerse
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73df30d6-3ac6-4601-8644-8be716fdd4ff/deploy-status)](https://app.netlify.com/sites/hvxley/deploys)
+---
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
