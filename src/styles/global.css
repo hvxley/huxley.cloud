@@ -12,6 +12,18 @@ body {
   line-height: 1.5;
 }
 
+header {
+  display: flex;
+  gap: 1rem;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 ul a {
   color: #443b43;
   text-decoration: none;
