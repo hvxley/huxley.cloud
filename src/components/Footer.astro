@@ -3,14 +3,14 @@
 ---
 <style>
   footer {
-    display: flex;
+    display: flexbox;
     gap: 1rem;
     margin-top: 2rem;
   }
 
   footer div {
-    text-align: center;
-    width: 49.5%;
+    display: flex;
+    min-width: 19rem;
   }
 
   a {
@@ -31,6 +31,11 @@
     color: #c4bbc3;
     font-weight: bold;
   }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+
 </style>
 
 <footer>
@@ -44,6 +49,6 @@
     <a href="https://www.kolektiva.social/@Cloud" target="_blank" rel="me"><i class="fa-brands fa-mastodon"></i></a>
   </div>
   <div>
-    <span>&copy; 2023 Cloud Huxley. Made with 💚.</span>
+    <span class="copyright">&copy; 2023 Cloud Huxley. Made with 💚.</span>
   </div>
 </footer>
