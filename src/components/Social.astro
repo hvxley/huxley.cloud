@@ -1,15 +1,20 @@
 ---
 const { platform, username } = Astro.props;
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a href={`https://www.${platform}.com/${username}`} target="_blank">{platform}</a>
 
 <style>
 
 a {
   padding: 0.5rem 1rem;
-  color: white;
-  background-color: #4c1d95;
+  color: #dcd6db;
+  background-color: #60535e;
   text-decoration: none;
+}
+
+.dark a {
+  color: #ac9fab;
+  background-color: #60535e;
 }
 
 

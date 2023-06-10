@@ -1,5 +1,6 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #d4cacd;
+  color: #60535e;
   font-family: sans-serif;
 }
 
@@ -11,19 +12,25 @@ body {
   line-height: 1.5;
 }
 
+ul a {
+  color: #443b43;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  color: purple;
+  color: #443b43;
   font-size: 3.5rem;
 }
 
 .skill {
-  color: navy;
+  color: #60535e;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /* nav styles */
@@ -37,30 +44,35 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #292328;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #c4bbc3;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   display: none;
   margin: 0;
 }
 
 .nav-links a {
+  color: #60535e;
   display: block;
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-.nav-links a:hover, a:focus {
-  background-color: #ff9776;
+.nav-links a:hover, .nav-links a:focus {
+  background-color: #c4bbc3;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .expanded {
@@ -85,17 +97,27 @@ h1 {
  }
 }
 
+
+/*
+ * Dark Mode
+ */
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #292328;
+  color: #ac9fab;
 }
 
 .dark .nav-links a {
-  color: #fff;
+  color: #ac9fab;
+}
+
+.dark .nav-links a:hover, .dark .nav-links a:focus {
+  background-color: #443b43;
+}
+
+.dark h1 {
+  color: #c4bbc3;
 }
 
 .dark .skill {
-  color: yellow;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #ac9fab;
 }

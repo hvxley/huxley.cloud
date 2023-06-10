@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 <style>
   a {
-    color: #00539F;
+    color: #60535e;
   }
 
   .tags {
@@ -27,10 +27,16 @@ const { frontmatter } = Astro.props;
 
   .tag {
     margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
+    border: dotted 1px #c4bbc3;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     padding: .5em 1em;
     font-size: 1.15em;
-    background-color: #F8FCFD;
+    background-color: #dcd6db;
+  }
+
+  .dark .tag {
+    border: dotted 1px #443b43;
+    background-color: #292328;
   }
 </style>
