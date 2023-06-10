@@ -125,3 +125,7 @@ html.dark {
 .dark .hamburger .line {
   background-color: #dcd6db;
 }
+
+.dark ul a {
+  color: #ac9fab;
+}
