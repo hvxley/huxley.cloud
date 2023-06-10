@@ -1,5 +1,5 @@
 ---
-import Social from './Social.astro';
+
 ---
 <style>
   footer {
@@ -9,27 +9,33 @@ import Social from './Social.astro';
   }
 
   a {
-    padding: 0.5rem 1rem;
-    color: #dcd6db;
-    background-color: #60535e;
+    padding: 0.5rem 0.75rem;
+    background-color: #443b43;
     text-decoration: none;
+    border-radius: 1rem;
   }
 
-.dark a {
-    color: #292328;
-    background-color: #958493;
-}
 
+  .fa-facebook,
+  .fa-instagram,
+  .fa-github,
+  .fa-pinterest,
+  .fa-tiktok,
+  .fa-tumblr,
+  .fa-mastodon {
+    color: #c4bbc3;
+    font-weight: bold;
+  }
 </style>
 
 <footer>
   <div>
-    <Social platform="facebook" username="agirlnamedblaze" />
-    <Social platform="instagram" username="agirlnamedblaze" />
-    <Social platform="github" username="hvxley" />
-    <Social platform="pinterest" username="agirlnamedblaze" />
-    <Social platform="tiktok" username="@agirlnamedblaze" />
-    <Social platform="tumblr" username="agirlnamedblaze" />
-    <a href="https://www.kolektiva.social/@Cloud" target="_blank" rel="me">mastodon</a>
+    <a href="https://www.facebook.com/agirlnamedblaze" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/agirlnamedblaze" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.github.com/hvxley" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.pinterest.com/agirlnamedblaze" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+    <a href="https://www.tiktok.com/@agirlnamedblaze" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.tumblr.com/agirlnamedblaze" target="_blank"><i class="fa-brands fa-tumblr"></i></a>
+    <a href="https://www.kolektiva.social/@Cloud" target="_blank" rel="me"><i class="fa-brands fa-mastodon"></i></a>
   </div>
 </footer>

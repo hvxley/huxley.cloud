@@ -121,3 +121,7 @@ html.dark {
 .dark .skill {
   color: #ac9fab;
 }
+
+.dark .hamburger .line {
+  background-color: #dcd6db;
+}
