@@ -59,6 +59,11 @@ h1 {
   font-size: 3.5rem;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: 'Lato-Thin', sans-serif;
+  color: #443b43;
+}
+
 .skill {
   color: #60535e;
   font-weight: bold;
@@ -237,6 +242,11 @@ html.dark {
   color: #c4bbc3;
 }
 
+.dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  font-family: 'Lato-Thin', sans-serif;
+  color: #c4bbc3;
+}
+
 .dark .skill {
   color: #ac9fab;
 }
@@ -247,4 +257,25 @@ html.dark {
 
 .dark ul a {
   color: #ac9fab;
+}
+
+/*
+ * Form Stuff
+ */
+
+fieldset {
+  border: 1px solid #60535e;
+}
+
+ .dark fieldset {
+   border: 1px solid #c4bbc3;
+ }
+
+input, textarea {
+  border: 2px solid #60535e;
+  border-top-left-radius: 1rem;
+  border-radius: 1rem;
+  color: #60535e;
+  background-color: transparent;
+  padding: 0.3rem;
 }

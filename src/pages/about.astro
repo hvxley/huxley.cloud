@@ -1,35 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 const pageTitle = "About Cloud Huxley";
-
-const identity = {
-  firstName: "Cloud",
-  region: "Pacific Northwest",
-  country: "The United States",
-  occupation: "Deli Counter Trainer",
-  hobbies: ["Writing Code", "Photography", "Kitchen-Witchery"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "Hugo", "Astro", "Sass", "Dart/Flutter"];
-const happy = true;
-const finished = true;
-const goal = 3;
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in the {identity.region} of {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 &&
-      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-  {happy && <p>I am happy to be learning Astro!</p>}
-  {finished && <p>I finished this tutorial!</p>}
-  {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-</BaseLayout>
+<h2>Services I offer:</h2>
+<ul>
+  <li><strong><em>Domain Consultation & Management</em></strong><br/>Do you need help coming up with a name for your business idea? Perhaps you'd like a list of Top-Level Domains that reflect your industry. I've purchased a handful of domain names in my time, so I'd be happy to act as an agent on your behalf.</li>
+  <li><strong><em>Web Development</em></strong><br/>How would you like to see all of your assets bundled together on your very own site, curated to your senses? I use continuous integration to get you up and running swiftly, and keep you running.</li>
+  <li><strong><em>Hardware Diagnostics</em></strong><br/>Is your equipment giving you trouble? I can fix that, too. Server, workstation, tablet, or smartphone—I'm here to help you keep your devices communicating.</li>
+  <li><strong><em>Software Management</em></strong><br/>Software as a Service (SaaS) is affordable for the average person thanks to the advances of cloud computing. Are you trying to run a blog? Need a custom web server for your business? How about your own social network? I've got you covered.</li>
+</ul>
+<h2>The Necessary Experience:</h2>
+<ul>
+  <li><u>Web Application Developer</u> (Freelance)<br/>1999 - Present<br/>I went from Geocities fangirl to Myspace profile hacker-for-hire during the early era of the Browser Wars. I started learning HTML 4.01 in 1999, followed shortly by CSS and JavaScript. I've explored countless frameworks from Wikis to Wordpress to Drupal from the days of Forum boards, to the Fediverse, to vast collections of Node libraries.</li>
+  <li><u>Computer Repair Technician</u> (Freelance)<br/>2003 - Present<br/>I built my first desktop computer during my Senior year of high school. Since then, I have gained a reputation helping friends and their families repair computers, laptops, and mobile devices.</li>
+</ul>
+<h2>My Current Predicament:</h2>
+<p>My learning path has not been linear and I wish to return to school to establish my degree. I don't anticipate being back in college while working full-time in the food industry and parenting a teenager, so I'm working to eliminate debt for five years. For these reasons, I'm able to offer my services for fees way below the industry standard. Potential customers help me build a credible portfolio, and I'm incentivized to produce excellent quality curations. Let my predicament be your gain.
+</p>
+<form method="POST" action="https://usebasin.com/f/0b0a7252206b" target="_blank">
+<fieldset>
+<legend> Contacting Cloud </legend>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="3" cols="50"> Feel free to send a hello 👋
+</textarea><br><br>
+<input type="submit" value="Submit"><br><br>
+</fieldset>
+</form>
