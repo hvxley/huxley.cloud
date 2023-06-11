@@ -1,5 +1,7 @@
 html {
-  background-color: #f4f1f2;
+  /* background-color: #f4f1f2; */
+  background: rgb(244,241,242);
+  background: radial-gradient(circle, rgba(244,241,242,1) 0%, rgba(221,212,215,1) 35%, rgba(154,126,136,1) 100%);
   color: #60535e;
   font-family: sans-serif;
 }
@@ -196,7 +198,10 @@ h1 {
  * Dark Mode
  */
 html.dark {
-  background-color: #292328;
+  /* background-color: #292328; */
+  background: rgb(71,56,61);
+  background: radial-gradient(circle, rgba(71,56,61,1) 0%, rgba(43,34,37,1) 35%, rgba(14,11,12,1) 100%);
+
   color: #ac9fab;
 }
 
