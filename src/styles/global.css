@@ -1,5 +1,5 @@
 html {
-  background-color: #d4cacd;
+  background-color: #f4f1f2;
   color: #60535e;
   font-family: sans-serif;
 }
@@ -24,11 +24,17 @@ header .logo {
   align-items: flex-start;
 }
 
+ul li {
+  margin:2rem;
+}
+
 ul a {
   color: #443b43;
   text-decoration: none;
   font-weight: bold;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -45,7 +51,9 @@ h1 {
   text-transform: capitalize;
 }
 
-/* nav styles */
+/*
+ * Header Stuff
+ */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -63,11 +71,11 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #c4bbc3;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  background-color: transparent;
   display: none;
   margin: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .nav-links a {
@@ -81,15 +89,91 @@ h1 {
   text-transform: capitalize;
 }
 
-.nav-links a:hover, .nav-links a:focus {
+.fa-rss {
+  color: #60535e;
+}
+
+.nav-links a:hover, .nav-links a:active {
+  color: #443b43;
   background-color: #c4bbc3;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  transition-duration: 0.7s;
 }
 
 .expanded {
   display: unset;
 }
+
+/*
+ * Footer Stuff
+ */
+
+ footer {
+   display: flex;
+   gap: 1rem;
+   margin-top: 4rem;
+ }
+
+ footer div {
+   display: flex;
+   min-width: 19rem;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ footer div a {
+   padding: 0.3rem 0.5rem;
+   text-decoration: none;
+ }
+
+ .fa-facebook,
+ .fa-instagram,
+ .fa-github,
+ .fa-pinterest,
+ .fa-tiktok,
+ .fa-tumblr,
+ .fa-mastodon {
+   color: #c4bbc3;
+   font-weight: bold;
+ }
+
+ .fa-facebook:hover, .fa-facebook:active,
+ .fa-instagram:hover, .fa-instagram:active,
+ .fa-github:hover, .fa-github:active,
+ .fa-pinterest:hover, .fa-pinterest:active,
+ .fa-tiktok:hover, .fa-tiktok:active,
+ .fa-tumblr:hover, .fa-tumblr:active,
+ .fa-mastodon:hover, .fa-mastodon:active {
+   color: #fff;
+   font-weight: bolder;
+   transition-duration: 0.7s;
+ }
+
+ .copyright {
+   font-size: 0.8rem;
+ }
+
+/*
+ * Blog Stuff
+ */
+
+.img-fluid {
+  max-width: 100%;
+  margin: 0;
+}
+
+.img-fluid[width] {
+  width: auto; /* Defer to max-width */
+}
+.img-fluid[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}
+
+/*
+ * Width Resolutions above 636px
+ */
 
 @media screen and (min-width: 636px) {
   .nav-links {
@@ -122,8 +206,13 @@ html.dark {
   color: #ac9fab;
 }
 
+.dark .fa-rss {
+  color: #ac9fab;
+}
+
 .dark .nav-links a:hover, .dark .nav-links a:focus {
   background-color: #443b43;
+  transition-duration: 0.7s;
 }
 
 .dark h1 {

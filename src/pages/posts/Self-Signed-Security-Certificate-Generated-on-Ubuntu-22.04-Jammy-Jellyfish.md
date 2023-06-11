@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Self-Signed Security Certificate Generated on Ubuntu 22.04 Jammy Jellyfish'
-pubDate: 2023-06-09
+pubDate: 2023-06-11
 description: 'A brief tutorial on creating an HTTPS web server in Node using Express.'
 author: 'Cloud Huxley'
 image:
@@ -96,7 +96,7 @@ $ sudo node index
 [https://localhost:8443](https://localhost:8443/)
 
 You should see a security warning. This is because the certificate is self-signed. Self-signed certificates are good for development, but unsafe for production servers.
-![Potential Security Risk](../../images/blog/potential_security_risk.png "Potential Security Risk")
+<img src="/img/blog/potential_security_risk.png" class="img-fluid" alt="Potential Security Risk"/>
 
 Click the “Advanced” button, and select “Accept the Risk and Continue”. Your site should now be loaded with a traditional “Hello World!” message.
 

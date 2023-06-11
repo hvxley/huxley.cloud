@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Relaunch'
-pubDate: 2023-06-09
+pubDate: 2023-06-08
 description: 'Relaunching the CloudHuxleyVerse'
 author: 'Cloud Huxley'
 image:

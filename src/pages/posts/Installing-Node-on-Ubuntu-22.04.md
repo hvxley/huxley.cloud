@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Installing Node.js on Ubuntu 22.04 Jammy Jellyfish'
-pubDate: 2023-06-09
+pubDate: 2023-06-10
 description: 'A brief tutorial on installing the NodeJS environment.'
 author: 'Cloud Huxley'
 image:
