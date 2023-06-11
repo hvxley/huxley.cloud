@@ -34,23 +34,6 @@ ul a {
   font-weight: bold;
 }
 
-.main_container {
-  display: flex;
-  width: 100%;
-}
-
-.half_container {
-  width: 50%;
-  margin: 0.3rem;
-}
-
-.half-container:nth-child(1)
-{
-  background-image: url('https://huxley.cloud/img/portrait.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 * {
   box-sizing: border-box;
 }
