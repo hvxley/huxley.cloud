@@ -1,9 +1,22 @@
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('/fonts/lato/Lato-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url('/fonts/lato/Lato-Thin.ttf') format('truetype');
+}
+
+
 html {
   /* background-color: #f4f1f2; */
   background: rgb(244,241,242);
   background: radial-gradient(circle, rgba(244,241,242,1) 0%, rgba(221,212,215,1) 35%, rgba(154,126,136,1) 100%);
   color: #60535e;
-  font-family: sans-serif;
+  font-family: 'Lato-Medium', sans-serif;
 }
 
 body {
@@ -41,6 +54,7 @@ ul a {
 }
 
 h1 {
+  font-family: 'Lato-Thin', sans-serif;
   color: #443b43;
   font-size: 3.5rem;
 }
@@ -68,6 +82,7 @@ h1 {
 }
 
 .nav-links {
+  font-family: 'Lato-Thin', sans-serif;
   width: 100%;
   top: 5rem;
   left: 48px;
