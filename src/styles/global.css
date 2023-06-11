@@ -109,13 +109,13 @@ h1 {
 
  footer {
    display: flex;
+   width: 100%;
    gap: 1rem;
    margin-top: 4rem;
  }
 
  footer div {
    display: flex;
-   min-width: 19rem;
    flex-direction: row;
    justify-content: center;
    align-items: center;
