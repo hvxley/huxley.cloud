@@ -88,9 +88,24 @@
   src: url('/fonts/lato/Lato-ThinItalic.ttf') format('truetype');
 }
 
-html,
-body {
+b,
+strong {
+  font-family: $font-semibold;
+}
+
+body,
+html {
   font-family: $font-medium;
+}
+
+em,
+i {
+  font-family: $font-italic;
+}
+
+footer div a {
+  font-size: 1.7rem;
+  text-decoration: none;
 }
 
 h1 {
@@ -122,16 +137,8 @@ h5 {
   font-size: 1.7rem;
 }
 
-h6 {font-size: 1.45rem;}
-
-b,
-strong {
-  font-family: $font-semibold;
-}
-
-i,
-em {
-  font-family: $font-italic;
+h6 {
+  font-size: 1.45rem;
 }
 
 input,
@@ -144,11 +151,6 @@ input[type=submit]:hover {
   font-family: $font-bold;
 }
 
-footer div a {
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-
 label {
   font-size: 1rem;
 }
@@ -159,7 +161,9 @@ ul a {
 }
 
 .copyright {
+  font-family: $font-heavyItalic;
   font-size: 0.8rem;
+  float: right;
 }
 
 .tag {

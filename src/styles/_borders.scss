@@ -1,14 +1,10 @@
-.dark fieldset {
-   border: 1px solid $grey-2;
-}
-
 fieldset {
-  border: 2px solid $grey-4;
+  border: 2px solid $border-color;
 }
 
 input,
 textarea {
-  border: 2px solid $grey-4;
+  border: 2px solid $border-color;
   border-radius: $border-radius;
 }
 
@@ -16,22 +12,12 @@ input[type=submit] {
   border: 3px solid $grey-3;
 }
 
-.nav-links {
-  border-top-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-}
-
 .portrait {
   border-radius: $pic-border-radius;
 }
 
-.nav-links a:hover, .nav-links a:active {
-  border-top-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-}
-
 .tag {
-   border: dotted 1px $grey-2;
+   border: dotted 1px $border-color;
    border-top-left-radius: $border-radius;
    border-bottom-right-radius: $border-radius;
 }

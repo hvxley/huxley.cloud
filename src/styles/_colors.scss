@@ -35,6 +35,7 @@ h4,
 h5,
 h6 {
   color: $grey-2;
+  text-shadow: $text-shadow;
 }
 
 
@@ -45,7 +46,8 @@ h6 {
 .fa-tiktok,
 .fa-tumblr,
 .fa-mastodon {
-  color: $grey-2;
+  color: $grey-3;
+  text-shadow: $text-shadow;
 }
 
 .fa-facebook:hover,
@@ -62,7 +64,7 @@ h6 {
 .fa-tumblr:active,
 .fa-mastodon:hover,
 .fa-mastodon:active {
-  color: lighten($grey-2, 20%);
+  color: lighten($grey-3, 20%);
 }
 
 .fa-rss {
