@@ -1,0 +1,112 @@
+body {
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@keyframes bugfix { from {padding:0;} to {padding:0;}}
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
+
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  top: 3em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: .2s;
+
+  span {
+      height: 4px;
+      width: 35px;
+      border-radius: 2px;
+      background-color: $grey-1;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+      &:before {
+        top: -10px;
+        visibility: visible;
+      }
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 4px;
+          width: 35px;
+          border-radius: 2px;
+          background-color: $grey-1;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+    &:hover span, &:hover span:before, &:hover span:after {
+      background: darken($grey-1, 20%);
+      transition-duration: .2s;
+    }
+}
+
+input[type=checkbox] {
+  display: none;
+
+  &:checked ~ #overlay {
+    visibility: visible;
+  }
+
+  &:checked ~ #overlay-button {
+    &:hover span, span{
+      background: transparent;
+    }
+    span {
+      &:before {
+        transform: rotate(45deg) translate(7px, 7px);
+        opacity: 1;
+      }
+      &:after {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+    }
+  }
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(41,35,40,0.3);
+  background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(41,35,40,1) 72%, rgba(41,35,40,1) 100%);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    padding-top: 2rem;
+    list-style-type: none;
+    li {
+      padding: 0.8rem;
+      a {
+        color: $grey-2;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 0.5rem;
+        &:hover {
+          color: lighten($grey-2, 20%);
+          background-color: $grey-4;
+          border-top-left-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+  }
+}

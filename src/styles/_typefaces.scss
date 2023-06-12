@@ -94,12 +94,12 @@ body {
 }
 
 h1 {
-  font-family: $font-black;
+  font-family: $font-heavy;
   font-size: 3.5rem;
 }
 
 h2 {
-  font-family: $font-heavy;
+  font-family: $font-thin;
   font-size: 3rem;
 }
 
@@ -146,7 +146,7 @@ footer div a {
 }
 
 ul a {
-  font-family: $font-semibold;
+  font-family: $font-black;
   text-decoration: none;
 }
 
