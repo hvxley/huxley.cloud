@@ -90,14 +90,6 @@ h6 {
   color: $grey-4;
 }
 
-.dark .hamburger .line {
-  background-color: $grey-1;
-}
-
-.hamburger .line {
-  background-color: $grey-6;
-}
-
 .dark .nav-links a {
   color: $grey-3;
 }
@@ -133,9 +125,3 @@ h6 {
 .tag a {
     color: $grey-4;
   }
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    background: none;
-  }
-}

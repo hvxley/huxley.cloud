@@ -1,24 +1,21 @@
 ---
-import Hamburger from './Hamburger.astro';
-import Navigation from './Navigation.astro';
-import ThemeIcon from './ThemeIcon.astro';
 import Logo from './Logo.astro';
+import ThemeIcon from './ThemeIcon.astro';
 ---
-<style>
-
-.fa-rss {
-  color: #60535e;
-}
-
-</style>
-
 <header>
-  <nav>
-    <div class="logo">
-      <Hamburger />
-      <Logo />
-      <ThemeIcon />
-      <Navigation />
+  <div class="logo">
+    <Logo />
+    <ThemeIcon />
+    <input type="checkbox" id="overlay-input" />
+    <label for="overlay-input" id="overlay-button"><span></span></label>
+    <div id="overlay">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="https://huxley.cloud/rss.xml"><i class="fa-solid fa-rss"></i></a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
 </header>
