@@ -48,6 +48,7 @@ body {
     }
     &:hover span, &:hover span:before, &:hover span:after {
       background: darken($grey-1, 20%);
+      transition-duration: 2s;
     }
 }
 
