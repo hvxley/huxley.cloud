@@ -136,13 +136,21 @@ em {
 
 input,
 textarea {
-  font-family: $font-lightItalic;
+  font-family: $font-semibold;
   font-size: 1rem;
+}
+
+input[type=submit]:hover {
+  font-family: $font-bold;
 }
 
 footer div a {
   text-decoration: none;
   font-size: 1.7rem;
+}
+
+label {
+  font-size: 1rem;
 }
 
 ul a {

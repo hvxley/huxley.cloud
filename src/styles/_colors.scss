@@ -1,3 +1,8 @@
+fieldset {
+  background: #292328;
+  background: radial-gradient(at left top, #292328, darken(#292328, 20%));
+}
+
 html {
   background: $grey-6;
   background: radial-gradient(circle, rgba($grey-6,1) 0%, rgba(43,34,37,1) 35%, rgba(14,11,12,1) 100%);
@@ -10,10 +15,18 @@ textarea {
   background: none;
 }
 
+input[type=submit] {
+  background-color: $grey-6;
+}
+
+input[type=submit]:hover {
+  background-color: #06b621;
+  color: lighten($grey-1, 20%);
+}
+
 ul a {
   color: $grey-3;
 }
-
 
 h1,
 h2,

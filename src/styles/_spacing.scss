@@ -42,7 +42,20 @@ header .logo {
 
 input,
 textarea {
+  display: block;
+  margin: 0;
   padding: 0.3rem;
+}
+
+input[type=submit] {
+  margin-top: 1rem;
+  margin-left: 15rem;
+}
+
+label {
+  display: block;
+  padding: 0.2rem;
+  margin-left: 1rem;
 }
 
 p {

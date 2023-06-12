@@ -3,13 +3,17 @@
 }
 
 fieldset {
-  border: 1px solid $grey-4;
+  border: 2px solid $grey-4;
 }
 
 input,
 textarea {
   border: 2px solid $grey-4;
   border-radius: $border-radius;
+}
+
+input[type=submit] {
+  border: 3px solid $grey-3;
 }
 
 .nav-links {
