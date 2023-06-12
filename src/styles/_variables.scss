@@ -1,32 +1,16 @@
 // Font Stack
-$font-black:          'Lato-Black', sans-serif;
-$font-blackItalic:    'Lato-BlackItalic', sans-serif;
-$font-bold:           'Lato-Bold', sans-serif;
-$font-boldItalic:     'Lato-BoldItalic', sans-serif;
-$font-hairline:       'Lato-Hairline', sans-serif;
-$font-hairlineItalic: 'Lato-HairlineItalic', sans-serif;
-$font-heavy:          'Lato-Heavy', sans-serif;
-$font-heavyItalic:    'Lato-HeavyItalic', sans-serif;
-$font-italic:         'Lato-Italic', sans-serif;
-$font-light:          'Lato-Light', sans-serif;
-$font-lightItalic:    'Lato-LightItalic', sans-serif;
-$font-medium:         'Lato-Medium', sans-serif;
-$font-mediumItalic:   'Lato-MediumItalic', sans-serif;
-$font-regular:        'Lato-Regular', sans-serif;
-$font-semibold:       'Lato-Semibold', sans-serif;
-$font-semiboldItalic: 'Lato-SemiboldItalic', sans-serif;
-$font-thin:           'Lato-Thin', sans-serif;
-$font-thinItalic:     'Lato-ThinItalic', sans-serif;
+
+$font-stack-medium: 'Lato-Medium', sans-serif;
+$font-stack-thin: 'Lato-Thin', sans-serif;
 
 // Colors
-$bg-color:            #f4f1f2;
-$grey-1:              #dcd6db;
-$grey-2:              #c4bbc3;
-$grey-3:              #ac9fab;
-$grey-4:              #60535e;
-$grey-5:              #443b43;
-$grey-6:              #292328;
+$bg-color: #f4f1f2;
+$grey-1: #dcd6db;
+$grey-2: #c4bbc3;
+$grey-3: #ac9fab;
+$grey-4: #60535e;
+$grey-5: #443b43;
+$grey-6: #292328;
 
 // Border Radius
-$border-radius:       1rem;
-$pic-border-radius:   33% 0;
+$border-radius: 1rem;

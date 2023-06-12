@@ -1,10 +1,347 @@
 @import 'variables';
-@import 'typefaces';
-@import 'colors';
-@import 'spacing';
-@import 'borders';
-@import 'duration';
 
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('/fonts/lato/Lato-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url('/fonts/lato/Lato-Thin.ttf') format('truetype');
+}
+
+
+html {
+  background: $bg-color;
+  background: radial-gradient(circle, rgba($bg-color,1) 0%, rgba(221,212,215,1) 35%, rgba(154,126,136,1) 100%);
+  color: $grey-4;
+  font-family: $font-stack-medium;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin:2rem;
+}
+
+ul a {
+  color: $grey-5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: $font-stack-thin;
+  color: $grey-5;
+  font-size: 3.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-thin;
+  color: $grey-5;
+}
+
+.skill {
+  color: $grey-4;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/*
+ * Header Stuff
+ */
 .hamburger {
+  padding-right: 20px;
   cursor: pointer;
 }
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: $grey-6;
+}
+
+.nav-links {
+  font-family: $font-stack-thin;
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: transparent;
+  display: none;
+  margin: 0;
+  border-top-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.nav-links a {
+  color: $grey-4;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.fa-rss {
+  color: $grey-4;
+}
+
+.nav-links a:hover, .nav-links a:active {
+  color: $grey-5;
+  background-color: $grey-2;
+  border-top-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  transition-duration: 2s;
+}
+
+.expanded {
+  display: unset;
+}
+
+/*
+ * Footer Stuff
+ */
+
+ footer {
+   display: flex;
+   width: 100%;
+   gap: 1rem;
+   margin-top: 4rem;
+ }
+
+ footer div {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ footer div a {
+   padding: 0.3rem 0.5rem;
+   text-decoration: none;
+ }
+
+ .fa-facebook,
+ .fa-instagram,
+ .fa-github,
+ .fa-pinterest,
+ .fa-tiktok,
+ .fa-tumblr,
+ .fa-mastodon {
+   color: $grey-2;
+   font-weight: bold;
+ }
+
+ .fa-facebook:hover, .fa-facebook:active,
+ .fa-instagram:hover, .fa-instagram:active,
+ .fa-github:hover, .fa-github:active,
+ .fa-pinterest:hover, .fa-pinterest:active,
+ .fa-tiktok:hover, .fa-tiktok:active,
+ .fa-tumblr:hover, .fa-tumblr:active,
+ .fa-mastodon:hover, .fa-mastodon:active {
+   color: lighten($grey-2, 20%);
+   font-weight: bolder;
+   transition-duration: 2s;
+ }
+
+ .dark .fa-facebook,
+ .dark .fa-instagram,
+ .dark .fa-github,
+ .dark .fa-pinterest,
+ .dark .fa-tiktok,
+ .dark .fa-tumblr,
+ .dark .fa-mastodon {
+   color: #c4bbc3;
+   font-weight: bold;
+ }
+
+ .dark .fa-facebook:hover, .dark .fa-facebook:active,
+ .dark .fa-instagram:hover, .dark .fa-instagram:active,
+ .dark .fa-github:hover, .dark .fa-github:active,
+ .dark .fa-pinterest:hover, .dark .fa-pinterest:active,
+ .dark .fa-tiktok:hover, .dark .fa-tiktok:active,
+ .dark .fa-tumblr:hover, .dark .fa-tumblr:active,
+ .dark .fa-mastodon:hover, .dark .fa-mastodon:active {
+   color: lighten($grey-2, 20%);
+   font-weight: bolder;
+   transition-duration: 2s;
+ }
+
+ .copyright {
+   font-size: 0.8rem;
+ }
+
+/*
+ * Blog Stuff
+ */
+
+.img-fluid {
+  max-width: 100%;
+  margin: 0;
+}
+
+.img-fluid[width] {
+  width: auto; /* Defer to max-width */
+}
+.img-fluid[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}
+
+/*
+ * Width Resolutions above 636px
+ */
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .hamburger {
+   display: none;
+ }
+}
+
+
+/*
+ * Dark Mode
+ */
+html.dark {
+  background: $grey-6;
+  background: radial-gradient(circle, rgba($grey-6,1) 0%, rgba(43,34,37,1) 35%, rgba(14,11,12,1) 100%);
+  color: $grey-3;
+}
+
+.dark .nav-links a {
+  color: $grey-3;
+}
+
+.dark .fa-rss {
+  color: $grey-3;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  background-color: $grey-5;
+  transition-duration: 2s;
+}
+
+.dark h1 {
+  color: $grey-2;
+}
+
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: $grey-2;
+}
+
+.dark .skill {
+  color: $grey-3;
+}
+
+.dark .hamburger .line {
+  background-color: $grey-1;
+}
+
+.dark ul a {
+  color: $grey-3;
+}
+
+/*
+ ********* Form Stuff **********
+ */
+
+fieldset {
+  border: 1px solid $grey-4;
+}
+
+ .dark fieldset {
+   border: 1px solid $grey-2;
+ }
+
+input,
+textarea {
+  border: 2px solid $grey-4;
+  border-radius: $border-radius;
+  color: $grey-4;
+  background-color: transparent;
+  padding: 0.3rem;
+}
+
+/*
+ ******** Tag Stuff **********
+ */
+
+ .tags {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+ }
+
+ .tag {
+   margin: 0.25em;
+   border: dotted 1px $grey-2;
+   border-top-left-radius: $border-radius;
+   border-bottom-right-radius: $border-radius;
+   padding: .5em 1em;
+   font-size: 1.15em;
+   background-color: $grey-1;
+ }
+
+ .tag:hover,
+ .tag:active,
+ .tag:focus {
+   background-color: lighten($grey-1, 20%);
+   transition-duration: 2s;
+ }
+
+ .tag a {
+     color: $grey-4;
+     font-size: 0.8rem;
+   }
