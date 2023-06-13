@@ -90,7 +90,7 @@
 
 a {
   text-decoration: none;
-  &:hover {
+  &:hover, &:active, &:focus {
     text-decoration: underline;
   }
 }
