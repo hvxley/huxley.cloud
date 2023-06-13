@@ -1,3 +1,10 @@
+a {
+  color: $grey-2;
+  &:hover, &:active, &:focus {
+    color: lighten($grey-2, 20%);
+  }
+}
+
 fieldset {
   background: #292328;
   background: radial-gradient(at left top, #292328, darken(#292328, 20%));
@@ -68,8 +75,13 @@ h6 {
 }
 
 .fa-rss {
-  color: $grey-3;
+  color: $grey-2;
+  &:hover {
+    color: lighten($grey-2, 20%);
+  }
 }
+
+
 
 .tag {
   background-color: $grey-1;

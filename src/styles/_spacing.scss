@@ -71,7 +71,7 @@ ul {
 }
 
 ul li {
-  margin:2rem;
+  margin:0.5rem;
 }
 
 * {
@@ -88,6 +88,12 @@ ul li {
 }
 .img-fluid[width][height] {
   height: auto; /* Preserve aspect ratio */
+}
+
+.logo a img {
+  display: block;
+  min-width: 175px;
+  max-width: 215px;
 }
 
 .portrait {

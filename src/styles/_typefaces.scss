@@ -88,6 +88,13 @@
   src: url('/fonts/lato/Lato-ThinItalic.ttf') format('truetype');
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 b,
 strong {
   font-family: $font-semibold;

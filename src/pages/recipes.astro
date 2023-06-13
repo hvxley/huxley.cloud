@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RecipePost from '../components/RecipePost.astro';
+const allPosts = await Astro.glob('../pages/recipes/*.md');
+const pageTitle = "Kitchen Witchery";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>In no particular order...</p>
+  <ul>
+    {allPosts.map((post) => <RecipePost url={post.url} title={post.frontmatter.title} />)}
+  </ul>
+</BaseLayout>
